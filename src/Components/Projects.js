@@ -1,10 +1,21 @@
 import React from "react";
 
+
+
 const projects = [
-  { title: "Portfolio Website", desc: "A personal portfolio built with React.", img: "./images/portfolio.jpg" },
-  
-  { title: "Weather App", desc: "Fetches weather data using OpenWeather API.", img: "/images/weather.jpg" },
+  {
+    title: "Online Medicine Ordering System",
+    desc: "A web app that allows users to order medicines online with features like cart, payment, and admin dashboard.",
+    img: process.env.PUBLIC_URL + "/onlinemed.jpg", 
+  },
+  {
+    title: "Expense Tracker",
+    desc: "An app to manage daily income and expenses with interactive charts and real-time updates.",
+    img: process.env.PUBLIC_URL + "/expense.jpg",
+  },
 ];
+
+
 
 export default function Projects() {
   return (
@@ -22,5 +33,3 @@ export default function Projects() {
     </section>
   );
 }
-
-
